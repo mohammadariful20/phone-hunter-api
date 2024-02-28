@@ -66,14 +66,34 @@
       <div id="loading-spinner" class="text-center hidden">
         <span class="loading loading-spinner text-primary"></span>
       </div>
+      <!-- show phone card -->
       <div id="phone-container" class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full">
       </div>
+      <!-- show all button -->
       <div id="showAll" class="text-center my-8 hidden">
-        <button onclick="" class="btn btn-outline btn-accent rounded text-black">Show All</button>
+        <button onclick="handleShowAll()" class="btn btn-outline btn-accent rounded text-black">Show All</button>
       </div>
     </section>
+    <section>
+      <!-- modeal section -->
+      <!-- You can open the modal using ID.showModal() method -->
+      <dialog id="my_modal_3" class="modal">
+        <div class="modal-box">
+          <form method="dialog">
+            <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+          </form>
+          <h3 id="modeal-heading" class="font-bold text-lg"></h3>
+          <div id="modal-container">
+
+          </div>
+        </div>
+      </dialog>
+    </section>
   </main>
-  <footer></footer>
+  <footer>
+
+    <p><span class="text-black font-bold"></span>${}</p>
+  </footer>
 
   <script src="js/index.js"></script>
 </body>
